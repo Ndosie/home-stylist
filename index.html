@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HOMESTYLIST | Building Finishing & Interior Solutions</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#0F172A",
+              gold: "#D4AF37",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="font-poppins bg-white">
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center px-6 py-5">
+          <a href="#" class="text-2xl font-bold text-navy">
+            HOME<span class="text-gold">STYLIST</span>
+          </a>
+
+          <nav class="hidden lg:flex gap-8 text-gray-700 font-medium">
+            <a href="#home" class="hover:text-gold">Home</a>
+
+            <a href="#about" class="hover:text-gold">About</a>
+
+            <a href="#services" class="hover:text-gold">Services</a>
+
+            <a href="#contact" class="hover:text-gold">Contact</a>
+          </nav>
+
+          <a
+            href="#contact"
+            class="hidden lg:inline-block bg-gold text-navy font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition"
+          >
+            Request Quote
+          </a>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-navy">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-navy text-white z-40">
+      <div
+        class="flex flex-col items-center justify-center h-full gap-8 text-xl"
+      >
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="pt-32 lg:pt-40 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Left -->
+
+          <div>
+            <p class="uppercase tracking-[4px] text-gold font-semibold">
+              Building Finishing & Interior Solutions
+            </p>
+
+            <h1
+              class="mt-6 text-5xl lg:text-6xl font-extrabold leading-tight text-navy"
+            >
+              Turning Your Dream Home
+
+              <span class="text-gold"> Into Reality </span>
+            </h1>
+
+            <p class="mt-8 text-lg text-gray-600 leading-8">
+              Tunabadilisha nyumba kuwa makazi ya kisasa kupitia ubora, ubunifu
+              na utaalamu.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="bg-navy text-white px-8 py-4 rounded-lg hover:bg-slate-800 transition"
+              >
+                Get Free Quote
+              </a>
+
+              <a
+                href="https://wa.me/255700000000"
+                class="border-2 border-navy text-navy px-8 py-4 rounded-lg hover:bg-navy hover:text-white transition"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>
+
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+
+          <div>
+            <img
+              src="images/hero.jpg"
+              alt="Luxury Interior"
+              class="rounded-3xl shadow-xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold text-navy">About Us</h2>
+
+          <div class="w-20 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+          <!-- Image -->
+
+          <div>
+            <img
+              src="images/about.jpg"
+              alt="Homestylist Team"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Content -->
+
+          <div>
+            <h3 class="text-3xl font-bold text-navy mb-6">
+              Welcome to HOMESTYLIST
+            </h3>
+
+            <p class="text-gray-600 leading-8 mb-6">
+              HOMESTYLIST is a professional Building Finishing & Interior
+              Solutions company offering high-quality services for residential
+              homes, commercial buildings, and institutions across Tanzania.
+            </p>
+
+            <p class="text-gray-600 leading-8 mb-8">
+              We are committed to delivering exceptional workmanship, completing
+              projects on time, and exceeding our clients' expectations through
+              quality, innovation, and professionalism.
+            </p>
+
+            <!-- Features -->
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-4">
+                <div
+                  class="bg-gold w-10 h-10 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-white"></i>
+                </div>
+
+                <span class="font-medium"> Quality Workmanship </span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="bg-gold w-10 h-10 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-white"></i>
+                </div>
+
+                <span class="font-medium"> Experienced Professionals </span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="bg-gold w-10 h-10 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-white"></i>
+                </div>
+
+                <span class="font-medium"> Customer Satisfaction </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-navy">Our Services</h2>
+
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+            We provide complete building finishing and interior solutions for
+            homes, offices, commercial buildings and institutions.
+          </p>
+
+          <div class="w-20 h-1 bg-gold mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-faucet text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">Plumbing Works</h3>
+
+            <p class="text-gray-600 leading-7">
+              Water supply systems, drainage installation, pumps and water
+              heater solutions.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-bolt text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Electrical Installation
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              House wiring, distribution boards, sockets and electrical
+              maintenance.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-lightbulb text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Lighting Installation
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              Decorative lighting, chandeliers, garden and smart lighting
+              systems.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-couch text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Interior Decoration
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              Gypsum ceilings, TV walls, wallpapers, curtains and wall panels.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-border-all text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">Flooring Works</h3>
+
+            <p class="text-gray-600 leading-7">
+              Tiles, marble, granite, PVC and wooden flooring.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-hammer text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Carpentry & Cabinetry
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              Kitchen cabinets, wardrobes, TV units and office furniture.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-paint-roller text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Painting Services
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              Interior, exterior, decorative and texture painting.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-shield-halved text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Security Systems
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              CCTV, electric fences, access control and video door phones.
+            </p>
+          </div>
+
+          <!-- Card -->
+
+          <div
+            class="bg-white rounded-2xl shadow hover:shadow-xl transition p-8"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-solar-panel text-2xl text-gold"></i>
+            </div>
+
+            <h3 class="text-xl font-semibold text-navy mb-3">
+              Solar Energy Solutions
+            </h3>
+
+            <p class="text-gray-600 leading-7">
+              Solar panels, backup systems and solar water heaters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section id="why-us" class="py-20 bg-navy text-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold">Why Choose HOMESTYLIST</h2>
+
+          <p class="mt-4 text-gray-300 max-w-3xl mx-auto">
+            We are committed to providing quality workmanship, reliable service
+            and complete customer satisfaction on every project we undertake.
+          </p>
+
+          <div class="w-20 h-1 bg-gold mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <!-- Features -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-user-hard-hat text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">Experienced Team</h3>
+
+              <p class="text-gray-300">
+                Skilled professionals committed to delivering quality work.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-medal text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">Quality Workmanship</h3>
+
+              <p class="text-gray-300">
+                High-quality finishes using trusted materials.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-coins text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">Competitive Prices</h3>
+
+              <p class="text-gray-300">
+                Affordable pricing without compromising quality.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-clock text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">On-Time Delivery</h3>
+
+              <p class="text-gray-300">
+                Projects completed within the agreed schedule.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-comments text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">Professional Advice</h3>
+
+              <p class="text-gray-300">
+                Expert guidance from planning to project completion.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-full bg-gold flex items-center justify-center shrink-0"
+            >
+              <i class="fas fa-shield-check text-navy"></i>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-xl mb-2">Workmanship Guarantee</h3>
+
+              <p class="text-gray-300">
+                We stand behind the quality of every completed project.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+
+        <div class="text-center mt-16">
+          <a
+            href="#contact"
+            class="inline-block bg-gold text-navy font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 transition"
+          >
+            Request a Free Quote
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ================= WHO WE SERVE ================= -->
+
+    <section id="clients" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold text-navy">Who We Serve</h2>
+
+          <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+            We proudly provide professional building finishing and interior
+            solutions for residential, commercial and institutional clients.
+          </p>
+
+          <div class="w-20 h-1 bg-gold mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-house text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Homeowners</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-building text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Companies</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-landmark text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Government</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-school text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Schools</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-hospital text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Hospitals</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-hotel text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Hotels</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-store text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Retail Shops</h3>
+          </div>
+
+          <div
+            class="bg-slate-50 rounded-xl p-8 text-center hover:shadow-lg transition"
+          >
+            <i class="fas fa-briefcase text-4xl text-gold mb-4"></i>
+            <h3 class="font-semibold text-navy">Offices</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold text-navy">
+            Let's Build Something Beautiful Together
+          </h2>
+
+          <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+            Have a project in mind? We'd love to hear from you. Contact us today
+            for a free consultation and quotation.
+          </p>
+
+          <div class="w-20 h-1 bg-gold mx-auto mt-5 rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-14">
+          <!-- Contact Information -->
+
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <div
+                class="w-14 h-14 bg-gold rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-phone text-navy"></i>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-xl text-navy">Phone</h3>
+
+                <p class="text-gray-600">+255 XXX XXX XXX</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="w-14 h-14 bg-gold rounded-full flex items-center justify-center"
+              >
+                <i class="fab fa-whatsapp text-navy"></i>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-xl text-navy">WhatsApp</h3>
+
+                <p class="text-gray-600">+255 XXX XXX XXX</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="w-14 h-14 bg-gold rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-envelope text-navy"></i>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-xl text-navy">Email</h3>
+
+                <p class="text-gray-600">info@homestylist.co.tz</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="w-14 h-14 bg-gold rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-location-dot text-navy"></i>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-xl text-navy">Location</h3>
+
+                <p class="text-gray-600">Dar es Salaam, Tanzania</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="w-14 h-14 bg-gold rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-clock text-navy"></i>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-xl text-navy">Working Hours</h3>
+
+                <p class="text-gray-600">
+                  Monday – Saturday
+
+                  <br />
+
+                  8:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <form class="space-y-5">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
+              />
+
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
+              />
+
+              <select
+                class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
+              >
+                <option>Select Service</option>
+                <option>Plumbing Works</option>
+                <option>Electrical Installation</option>
+                <option>Lighting Installation</option>
+                <option>Interior Decoration</option>
+                <option>Exterior Decoration</option>
+                <option>Flooring Works</option>
+                <option>Carpentry & Cabinetry</option>
+                <option>Painting Services</option>
+                <option>Security Systems</option>
+                <option>Solar Energy Solutions</option>
+              </select>
+
+              <textarea
+                rows="5"
+                placeholder="Tell us about your project..."
+                class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
+              ></textarea>
+
+              <button
+                class="w-full bg-navy text-white py-4 rounded-lg hover:bg-slate-900 transition"
+              >
+                Send Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-navy text-white">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Company -->
+
+          <div>
+            <h2 class="text-2xl font-bold">
+              HOME<span class="text-gold">STYLIST</span>
+            </h2>
+
+            <p class="mt-4 text-gray-300 leading-7">
+              Professional Building Finishing & Interior Solutions for homes,
+              commercial buildings and institutions.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+
+            <ul class="space-y-3 text-gray-300">
+              <li><a href="#home">Home</a></li>
+
+              <li><a href="#about">About</a></li>
+
+              <li><a href="#services">Services</a></li>
+
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+
+            <div class="flex gap-4 text-2xl">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+
+              <a href="#"><i class="fab fa-instagram"></i></a>
+
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-700 mt-12 pt-8 text-center text-gray-400"
+        >
+          © 2026 HOMESTYLIST. All Rights Reserved.
+
+          <br /><br />
+
+          <span class="text-gold">
+            Quality Finishing... Lasting Impression.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <a
+      href="https://wa.me/255700000000?text=Hello%20HOMESTYLIST,%20I%20would%20like%20to%20request%20a%20quotation."
+      class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-xl hover:scale-110 transition z-50"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
