@@ -52,6 +52,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <style>
+      .active {
+        color: #c79b42;
+      }
+    </style>
   </head>
 
   <body class="font-poppins bg-white">
@@ -137,14 +142,14 @@
             <div class="mt-10 flex flex-wrap gap-4">
               <a
                 href="#contact"
-                class="bg-navy text-white px-8 py-4 rounded-lg hover:bg-slate-800 transition"
+                class="bg-navy text-white px-8 py-4 rounded-lg hover:bg-slate-800 hover:text-gold transition"
               >
                 Get Free Quote
               </a>
 
               <a
                 href="https://wa.me/255757298800"
-                class="border-2 border-navy text-navy px-8 py-4 rounded-lg hover:bg-navy hover:text-white transition"
+                class="border-2 border-navy text-navy px-8 py-4 rounded-lg hover:bg-navy hover:text-gold transition"
               >
                 <i class="fab fa-whatsapp mr-2"></i>
 
@@ -165,7 +170,7 @@
     </section>
     <!-- ================= ABOUT ================= -->
 
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="scroll-mt-24 py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
           <h2 class="text-4xl font-bold text-navy">About Us</h2>
@@ -228,7 +233,7 @@
     </section>
     <!-- ================= SERVICES ================= -->
 
-    <section id="services" class="py-20 bg-slate-50">
+    <section id="services" class="scroll-mt-24 py-20 bg-slate-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-navy">Our Services</h2>
@@ -640,7 +645,7 @@
     </section>
     <!-- ================= CONTACT ================= -->
 
-    <section id="contact" class="py-20 bg-slate-50">
+    <section id="contact" class="scroll-mt-24 py-20 bg-slate-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-14">
           <h2 class="text-4xl font-bold text-navy">
@@ -665,9 +670,11 @@
               </div>
 
               <div>
-                <h3 class="font-semibold text-xl text-navy">Phone</h3>
+                <a href="tel:+255757298800">
+                  <h3 class="font-semibold text-xl text-navy">Phone</h3>
 
-                <p class="text-gray-600">+255 757 298 800</p>
+                  <p class="text-gray-600">+255 757 298 800</p>
+                </a>
               </div>
             </div>
 
@@ -679,9 +686,15 @@
               </div>
 
               <div>
-                <h3 class="font-semibold text-xl text-navy">WhatsApp</h3>
+                <a
+                  href="https://wa.me/255757298800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 class="font-semibold text-xl text-navy">WhatsApp</h3>
 
-                <p class="text-gray-600">+255 757 298 800</p>
+                  <p class="text-gray-600">+255 757 298 800</p>
+                </a>
               </div>
             </div>
 
@@ -693,9 +706,11 @@
               </div>
 
               <div>
-                <h3 class="font-semibold text-xl text-navy">Email</h3>
+                <a href="mailto:info@homestylist.co.tz">
+                  <h3 class="font-semibold text-xl text-navy">Email</h3>
 
-                <p class="text-gray-600">info@homestylist.co.tz</p>
+                  <p class="text-gray-600">info@homestylist.co.tz</p>
+                </a>
               </div>
             </div>
 
@@ -740,16 +755,28 @@
               <input
                 type="text"
                 placeholder="Full Name"
+                name="name"
+                required
                 class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
               />
 
               <input
                 type="tel"
                 placeholder="Phone Number"
+                name="phone"
+                required
+                class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                name="Email"
                 class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
               />
 
               <select
+                name="service"
                 class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold text-gray-400"
               >
                 <option>Select Service</option>
@@ -768,11 +795,13 @@
               <textarea
                 rows="5"
                 placeholder="Tell us about your project..."
+                name="message"
+                required
                 class="w-full border rounded-lg px-5 py-4 focus:outline-none focus:ring-2 focus:ring-gold"
               ></textarea>
 
               <button
-                class="w-full bg-navy text-white py-4 rounded-lg hover:bg-slate-900 transition"
+                class="w-full bg-navy text-white py-4 rounded-lg hover:bg-slate-900 hover:text-gold transition"
               >
                 Send Request
               </button>
@@ -801,13 +830,13 @@
             <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
 
             <ul class="space-y-3 text-gray-300">
-              <li><a href="#home">Home</a></li>
+              <li><a href="#home" class="hover:text-gold">Home</a></li>
 
-              <li><a href="#about">About</a></li>
+              <li><a href="#about" class="hover:text-gold">About</a></li>
 
-              <li><a href="#services">Services</a></li>
+              <li><a href="#services" class="hover:text-gold">Services</a></li>
 
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact" class="hover:text-gold">Contact</a></li>
             </ul>
           </div>
 
@@ -815,11 +844,17 @@
             <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
 
             <div class="flex gap-4 text-2xl">
-              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hover:text-gold"
+                ><i class="fab fa-facebook"></i
+              ></a>
 
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="hover:text-gold"
+                ><i class="fab fa-instagram"></i
+              ></a>
 
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="hover:text-gold"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -838,23 +873,9 @@
       </div>
     </footer>
 
-    <script>
-      const btn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const menuLinks = document.querySelectorAll("#mobileMenu a");
-
-      btn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      menuLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      });
-    </script>
+    <script src="js/script.js"></script>
     <a
-      href="https://wa.me/255700000000?text=Hello%20HOMESTYLIST,%20I%20would%20like%20to%20request%20a%20quotation."
+      href="https://wa.me/255757298800?text=Hello%20HOMESTYLIST,%20I%20would%20like%20to%20request%20a%20quotation."
       class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-xl hover:scale-110 transition z-50"
     >
       <i class="fab fa-whatsapp"></i>
